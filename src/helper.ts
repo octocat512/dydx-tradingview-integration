@@ -1,6 +1,6 @@
 import { JsonDB } from 'node-json-db';
 import { Config } from 'node-json-db/dist/lib/JsonDBConfig';
-import config = require('config');
+import config from 'config';
 
 export const _sleep = (ms: number) =>
 	new Promise((resolve) => setTimeout(resolve, ms));

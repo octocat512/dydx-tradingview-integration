@@ -1,4 +1,4 @@
-import express, { Router } from 'express';
+import express from 'express';
 import {
 	createOrder,
 	getAccount,
@@ -9,7 +9,7 @@ import {
 } from '../services';
 import { OrderParams } from '../types';
 
-const router: Router = express.Router();
+const router = express.Router();
 
 router.get('/', async (req, res) => {
 	console.log('Recieved GET request.');

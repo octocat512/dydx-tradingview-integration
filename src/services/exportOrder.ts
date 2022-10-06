@@ -1,7 +1,7 @@
 import { OrderResponseObject } from '@dydxprotocol/v3-client';
 import * as fs from 'fs';
 import { getFill, getOrder } from '../services';
-import config = require('config');
+import config from 'config';
 import { _sleep, getStrategiesDB } from '../helper';
 
 export const exportOrder = async (

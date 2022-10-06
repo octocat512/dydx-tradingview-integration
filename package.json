@@ -9,12 +9,13 @@
 		"start:test": "tsc && NODE_ENV=development ts-node dist/index.js",
 		"start:dev": "NODE_ENV=development tsc-watch --onSuccess \"ts-node dist/index.js\"",
 		"ngrok": "ngrok http 3000",
+		"lint": "eslint src/",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "0xIbuki",
 	"license": "MIT",
 	"dependencies": {
-		"@dydxprotocol/v3-client": "^1.6.7",
+		"@dydxprotocol/v3-client": "^1.14.0",
 		"@sentry/integrations": "^6.19.1",
 		"@sentry/node": "^6.18.2",
 		"@sentry/tracing": "^6.18.2",
